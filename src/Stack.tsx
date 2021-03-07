@@ -6,11 +6,11 @@ import { JustifyContent, Space } from "./definitions";
 
 type StackProps = {
   children?: React.ReactNode;
-  flexGrow: number;
-  flexShrink: number;
-  justifyContent: JustifyContent;
-  padLastChild: boolean;
-  space: Space;
+  flexGrow?: number;
+  flexShrink?: number;
+  justifyContent?: JustifyContent;
+  padLastChild?: boolean;
+  space?: Space;
   stackHeight?: string;
 };
 

@@ -5,9 +5,9 @@ import { Space } from "./definitions";
 type BoxProps = {
   children?: React.ReactNode;
   backgroundColor?: string;
-  flexGrow: number;
-  flexShrink: number;
-  space: Space;
+  flexGrow?: number;
+  flexShrink?: number;
+  space?: Space;
   padding?: number;
 };
 
