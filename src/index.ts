@@ -1,4 +1,4 @@
-import { JustifyContent } from "./definitions";
+import { JustifyContent, Space } from "./definitions";
 import Placeholder from "./Placeholder";
 
-export { JustifyContent, Placeholder };
+export { JustifyContent, Placeholder, Space };

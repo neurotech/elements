@@ -20,6 +20,7 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
+    "test": "node tests/index.js",
     "watch": "tsc --watch"
   },
   "devDependencies": {
