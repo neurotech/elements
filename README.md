@@ -1,2 +1,3 @@
 # elements
-Component library
+
+> A component library. Nothing special yet.
