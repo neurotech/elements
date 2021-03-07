@@ -2,7 +2,8 @@
   "name": "@neurotech/elements",
   "version": "0.0.2",
   "description": "Component library",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neurotech/elements.git"
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/neurotech/elements/issues"
   },
-  "homepage": "https://github.com/neurotech/elements#readme"
+  "homepage": "https://github.com/neurotech/elements#readme",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "react": "^17.0.1",
+    "typescript": "^4.2.3"
+  }
 }

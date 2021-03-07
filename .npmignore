@@ -1,0 +1,9 @@
+# Ignore GitHub-related items
+.github/
+
+# Ignore TS-related items
+src
+tsconfig.json
+
+# Ignore test-related items
+tests
