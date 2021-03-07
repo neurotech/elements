@@ -1,4 +1,4 @@
-# elements
+# :art: elements
 
 [![NPM](https://nodei.co/npm/@neurotech/elements.png?mini=true)](https://npmjs.com/package/@neurotech/elements)
 
