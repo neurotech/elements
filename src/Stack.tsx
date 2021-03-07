@@ -26,7 +26,7 @@ const StyledStack = styled.div<StackProps>`
   }
 `;
 
-export const Stack = (props: StackProps) => {
+const Stack = (props: StackProps) => {
   const stackItems = flattenChildren(props.children);
 
   return (
@@ -60,3 +60,5 @@ Stack.defaultProps = {
   padLastChild: false,
   space: Space.Small,
 };
+
+export default Stack;

@@ -1,5 +1,5 @@
 import Box from "./Box";
-import { Stack } from "./Stack";
+import Stack from "./Stack";
 
 type BoxProps = {
   children?: React.ReactNode;
