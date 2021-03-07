@@ -7,3 +7,6 @@ tsconfig.json
 
 # Ignore test-related items
 tests
+
+# Ignore babelrc
+.babelrc
