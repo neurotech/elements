@@ -1,6 +1,6 @@
 import React from "react";
-import { BoxProps, Space } from "./definitions";
 import styled from "styled-components";
+import { BoxProps, Space } from "./index";
 
 const StyledBox = styled.div<BoxProps>`
   background-color: ${(props) => props.backgroundColor};
