@@ -1,6 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { BoxProps, Space } from "./index";
+import { Space } from "./definitions";
+
+type BoxProps = {
+  children?: React.ReactNode;
+  backgroundColor?: string;
+  flexGrow: number;
+  flexShrink: number;
+  space: Space;
+  padding?: number;
+};
 
 const StyledBox = styled.div<BoxProps>`
   background-color: ${(props) => props.backgroundColor};
@@ -32,4 +41,4 @@ Box.defaultProps = {
   padding: 0,
 };
 
-export default Box;
+export { Box, BoxProps };

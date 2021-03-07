@@ -1,8 +1,8 @@
 import React, { Children } from "react";
 import flattenChildren from "react-keyed-flatten-children";
 import styled from "styled-components";
-import Box from "./Box";
-import { JustifyContent, Space } from "./index";
+import { Box } from "./Box";
+import { JustifyContent, Space } from "./definitions";
 
 type StackProps = {
   children?: React.ReactNode;
@@ -61,4 +61,4 @@ Stack.defaultProps = {
   space: Space.Small,
 };
 
-export default Stack;
+export { Stack, StackProps };

@@ -1,12 +1,3 @@
-export type BoxProps = {
-  children?: React.ReactNode;
-  backgroundColor?: string;
-  flexGrow: number;
-  flexShrink: number;
-  space: Space;
-  padding?: number;
-};
-
 export enum JustifyContent {
   Center = "center",
   End = "end",
