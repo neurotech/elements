@@ -1,0 +1,19 @@
+{
+  "name": "@neurotech/elements",
+  "version": "0.0.1",
+  "description": "Component library",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neurotech/elements.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Tim Douglas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neurotech/elements/issues"
+  },
+  "homepage": "https://github.com/neurotech/elements#readme"
+}
