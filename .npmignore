@@ -10,3 +10,6 @@ tests
 
 # Ignore babelrc
 .babelrc
+
+# Ignore Playroom-related items
+playroom.config.js
