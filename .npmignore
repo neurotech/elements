@@ -12,4 +12,5 @@ tests
 .babelrc
 
 # Ignore Playroom-related items
+dist
 playroom.config.js
