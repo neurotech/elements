@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Box } from "./Box";
 import { JustifyContent, Space } from "./definitions";
 
-type StackProps = {
+interface StackProps {
   children?: React.ReactNode;
   flexGrow?: number;
   flexShrink?: number;
@@ -12,7 +12,7 @@ type StackProps = {
   padLastChild?: boolean;
   space?: Space;
   stackHeight?: string;
-};
+}
 
 const StyledStack = styled.div<StackProps>`
   display: flex;

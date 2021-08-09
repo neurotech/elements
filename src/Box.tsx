@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Space } from "./definitions";
 
-type BoxProps = {
+interface BoxProps {
   children?: React.ReactNode;
   backgroundColor?: string;
   flexGrow?: number;
   flexShrink?: number;
   space?: Space;
   padding?: number;
-};
+}
 
 const StyledBox = styled.div<BoxProps>`
   background-color: ${(props) => props.backgroundColor};
