@@ -7,7 +7,7 @@ type ColumnProps = {
   children?: React.ReactNode;
   flexGrow?: number;
   flexShrink?: number;
-  space: Space;
+  space?: Space;
   columnWidth?: string;
 };
 

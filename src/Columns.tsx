@@ -2,16 +2,16 @@ import React, { createContext } from "react";
 import { JustifyContent, Space } from "./definitions";
 import styled from "styled-components";
 
-type ColumnsProps = {
+interface ColumnsProps {
   alignItems?: string;
   children?: React.ReactNode;
   flexWrap?: string;
   flow?: string;
-  justifyContent: JustifyContent;
+  justifyContent?: JustifyContent;
   onClick?: React.MouseEventHandler<HTMLDivElement>;
-  reverse: boolean;
-  space: Space;
-};
+  reverse?: boolean;
+  space?: Space;
+}
 
 const resolveReverseToValue = (prefix: string, reverse: boolean) => {
   return reverse ? `${prefix}-reverse` : prefix;
