@@ -8,8 +8,9 @@ tsconfig.json
 # Ignore test-related items
 tests
 
-# Ignore babelrc
+# Ignore rc
 .babelrc
+.eslintrc
 
 # Ignore Playroom-related items
 dist
