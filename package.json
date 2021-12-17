@@ -31,6 +31,9 @@
     "test:watch": "npm run test -- --watch",
     "watch": "tsc --watch"
   },
+  "dependencies": {
+    "styled-components": "^5.3.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",
