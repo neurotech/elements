@@ -1,5 +1,6 @@
 import React, { createContext } from "react";
-import { JustifyContent, Space } from "./definitions";
+import { JustifyContent } from "./shared/JustifyContent";
+import { Space } from "./shared/Space";
 import styled from "styled-components";
 
 interface ColumnsProps {

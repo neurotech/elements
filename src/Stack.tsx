@@ -2,7 +2,8 @@ import React, { Children } from "react";
 import flattenChildren from "react-keyed-flatten-children";
 import styled from "styled-components";
 import { Box } from "./Box";
-import { JustifyContent, Space } from "./definitions";
+import { JustifyContent } from "./shared/JustifyContent";
+import { Space } from "./shared/Space";
 
 interface StackProps {
   children?: React.ReactNode;

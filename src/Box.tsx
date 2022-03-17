@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Space } from "./definitions";
+import { Space } from "./shared/Space";
 
 interface BoxProps {
   children?: React.ReactNode;

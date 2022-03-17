@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ColumnsContext } from "./Columns";
-import { Space } from "./definitions";
+import { Space } from "./shared/Space";
 import styled from "styled-components";
 
 type ColumnProps = {
