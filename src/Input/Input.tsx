@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Space } from "../shared/Space";
-import { Stack } from "../Stack";
 
 export interface InputProps {
   disabled?: boolean;
@@ -18,8 +16,14 @@ type StyledLabelProps = Pick<InputProps, "invalid">;
 
 type StyledInputProps = Pick<InputProps, "fullWidth" | "invalid">;
 
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const StyledLabel = styled.label<StyledLabelProps>`
   font-weight: 500;
+  margin-bottom: 0.5rem;
   color: ${(props) =>
     props.invalid
       ? props.theme.input.label.invalid.text
@@ -101,7 +105,7 @@ export const Input = ({
   placeholder,
   value,
 }: InputProps) => (
-  <Stack flexGrow={1} space={Space.XSmall}>
+  <InputContainer>
     {label && <StyledLabel invalid={invalid}>{label}</StyledLabel>}
     <StyledInput
       disabled={disabled}
@@ -113,5 +117,5 @@ export const Input = ({
       type={"text"}
       value={value}
     />
-  </Stack>
+  </InputContainer>
 );
