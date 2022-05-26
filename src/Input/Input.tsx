@@ -9,6 +9,7 @@ export interface InputProps {
   invalid?: boolean;
   label?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onKeyUp?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
   placeholder?: string;
   value?: string;
 }
@@ -96,6 +97,7 @@ export const Input = ({
   invalid,
   label,
   onChange,
+  onKeyUp,
   placeholder,
   value,
 }: InputProps) => (
@@ -106,6 +108,7 @@ export const Input = ({
       fullWidth={fullWidth}
       invalid={invalid}
       onChange={onChange}
+      onKeyUp={onKeyUp}
       placeholder={placeholder}
       type={"text"}
       value={value}
