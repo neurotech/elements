@@ -28,7 +28,6 @@ const StyledColumns = styled.div<ColumnsProps>`
   margin-left: -${(props) => props.space};
   flex-wrap: ${(props) => props.flexWrap};
   overflow-wrap: break-word;
-  cursor: ${(props) => (props.onClick ? "pointer" : "default")};
 `;
 
 export const ColumnsContext = createContext({
