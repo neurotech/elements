@@ -16,9 +16,10 @@ type StyledLabelProps = Pick<InputProps, "invalid">;
 
 type StyledInputProps = Pick<InputProps, "fullWidth" | "invalid">;
 
-const InputContainer = styled.div`
+const InputContainer = styled.div<StyledInputProps>`
   display: flex;
   flex-direction: column;
+  flex: ${(props) => (props.fullWidth ? 1 : 0)};
 `;
 
 const StyledLabel = styled.label<StyledLabelProps>`
@@ -105,7 +106,7 @@ export const Input = ({
   placeholder,
   value,
 }: InputProps) => (
-  <InputContainer>
+  <InputContainer fullWidth={fullWidth}>
     {label && <StyledLabel invalid={invalid}>{label}</StyledLabel>}
     <StyledInput
       disabled={disabled}
