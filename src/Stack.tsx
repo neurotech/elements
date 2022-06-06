@@ -39,17 +39,9 @@ const Stack = (props: StackProps) => {
       stackHeight={props.stackHeight}
       justifyContent={props.justifyContent}
     >
-      {Children.map(stackItems, (child) => {
-        return (
-          <Box
-            flexGrow={props.flexGrow}
-            flexShrink={props.flexShrink}
-            space={props.space}
-          >
-            {child}
-          </Box>
-        );
-      })}
+      {Children.map(stackItems, (child) => (
+        <>{child}</>
+      ))}
     </StyledStack>
   );
 };
