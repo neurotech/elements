@@ -19,14 +19,15 @@ const resolveReverseToValue = (prefix: string, reverse: boolean) => {
 };
 
 const StyledColumns = styled.div<ColumnsProps>`
+  align-items: ${(props) => props.alignItems};
   display: flex;
+  flex: 1;
   flex-direction: ${(props) => resolveReverseToValue("row", props.reverse)};
   flex-flow: ${(props) => props.flow};
+  flex-wrap: ${(props) => props.flexWrap};
   justify-content: ${(props) =>
     props.justifyContent ? props.justifyContent : "flex-start"};
-  align-items: ${(props) => props.alignItems};
   margin-left: -${(props) => props.space};
-  flex-wrap: ${(props) => props.flexWrap};
   overflow-wrap: break-word;
 `;
 
