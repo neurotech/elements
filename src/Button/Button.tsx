@@ -68,7 +68,7 @@ export const Button = ({
       disabled={disabled}
       emoji={emoji}
       fullWidth={fullWidth}
-      onClick={() => onClick}
+      onClick={onClick}
       variant={variant}
     >
       <div>{label}</div>
