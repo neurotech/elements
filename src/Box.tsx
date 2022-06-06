@@ -16,6 +16,7 @@ interface BoxProps {
 const StyledBox = styled.div<BoxProps>`
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
+  display: flex;
   flex-grow: ${(props) => props.flexGrow};
   flex-shrink: ${(props) => props.flexShrink};
   padding: ${(props) => props.padding}rem;

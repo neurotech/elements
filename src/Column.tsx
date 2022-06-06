@@ -12,12 +12,13 @@ type ColumnProps = {
 };
 
 const StyledColumn = styled.div<ColumnProps>`
-  min-width: 0;
-  width: ${(props) => props.columnWidth};
-  flex-shrink: ${(props) => props.flexShrink};
-  flex-grow: ${(props) => props.flexGrow};
+  display: flex;
   flex-basis: auto;
+  flex-grow: ${(props) => props.flexGrow};
+  flex-shrink: ${(props) => props.flexShrink};
+  min-width: 0;
   padding-left: ${(props) => props.space};
+  width: ${(props) => props.columnWidth};
 `;
 
 export const Column = (props: ColumnProps) => {
