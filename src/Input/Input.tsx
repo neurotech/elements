@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export interface InputProps {
-  autofocus?: boolean;
+  autoFocus?: boolean;
   disabled?: boolean;
   fullWidth?: boolean;
   invalid?: boolean;
@@ -15,7 +15,7 @@ export interface InputProps {
 
 type StyledLabelProps = Pick<InputProps, "invalid">;
 
-type StyledInputProps = Pick<InputProps, "autofocus" | "fullWidth" | "invalid">;
+type StyledInputProps = Pick<InputProps, "autoFocus" | "fullWidth" | "invalid">;
 
 const InputContainer = styled.div<StyledInputProps>`
   display: flex;
@@ -98,7 +98,7 @@ const StyledInput = styled.input<StyledInputProps>`
 `;
 
 export const Input = ({
-  autofocus,
+  autoFocus,
   disabled,
   fullWidth,
   invalid,
@@ -111,7 +111,7 @@ export const Input = ({
   <InputContainer fullWidth={fullWidth}>
     {label && <StyledLabel invalid={invalid}>{label}</StyledLabel>}
     <StyledInput
-      autofocus={autofocus}
+      autoFocus={autoFocus}
       disabled={disabled}
       fullWidth={fullWidth}
       invalid={invalid}
