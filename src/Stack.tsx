@@ -1,7 +1,6 @@
 import React, { Children } from "react";
 import flattenChildren from "react-keyed-flatten-children";
 import styled from "styled-components";
-import { Box } from "./Box";
 import { JustifyContent } from "./shared/JustifyContent";
 import { Space } from "./shared/Space";
 
@@ -27,20 +26,24 @@ const StyledStack = styled.div<StackProps>`
   }
 `;
 
+const StackChild = styled.div<StackProps>`
+  padding-bottom: ${(props) => props.space};
+`;
+
 const Stack = (props: StackProps) => {
   const stackItems = flattenChildren(props.children);
 
   return (
     <StyledStack
-      space={props.space}
-      padLastChild={props.padLastChild}
       flexGrow={props.flexGrow}
       flexShrink={props.flexShrink}
-      stackHeight={props.stackHeight}
       justifyContent={props.justifyContent}
+      padLastChild={props.padLastChild}
+      space={props.space}
+      stackHeight={props.stackHeight}
     >
       {Children.map(stackItems, (child) => (
-        <>{child}</>
+        <StackChild space={props.space}>{child}</StackChild>
       ))}
     </StyledStack>
   );
