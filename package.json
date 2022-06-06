@@ -1,6 +1,6 @@
 {
   "name": "@neurotech/elements",
-  "version": "2.1.2",
+  "version": "3.0.0",
   "description": "Component library",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
