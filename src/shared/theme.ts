@@ -24,8 +24,8 @@ const buttonStyles = {
       text: palette.white,
       textShadow: palette.darkblue,
       hover: {
-        background: palette.lightblue,
-        text: palette.darkblue,
+        background: palette.darkblue,
+        text: palette.white,
       },
     },
     green: {
@@ -34,8 +34,8 @@ const buttonStyles = {
       text: palette.white,
       textShadow: palette.darkgreen,
       hover: {
-        background: palette.lightgreen,
-        text: palette.darkgreen,
+        background: palette.darkgreen,
+        text: palette.white,
       },
     },
     grey: {
@@ -44,8 +44,8 @@ const buttonStyles = {
       text: palette.white,
       textShadow: palette.darkgrey,
       hover: {
-        background: palette.lightgrey,
-        text: palette.darkgrey,
+        background: palette.darkgrey,
+        text: palette.white,
       },
     },
     red: {
@@ -54,8 +54,8 @@ const buttonStyles = {
       text: palette.white,
       textShadow: palette.darkred,
       hover: {
-        background: palette.lightred,
-        text: palette.darkred,
+        background: palette.darkred,
+        text: palette.white,
       },
     },
     yellow: {
@@ -64,8 +64,8 @@ const buttonStyles = {
       text: palette.white,
       textShadow: palette.darkyellow,
       hover: {
-        background: palette.lightyellow,
-        text: palette.darkyellow,
+        background: palette.darkyellow,
+        text: palette.white,
       },
     },
   },

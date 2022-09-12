@@ -17,9 +17,9 @@ type ButtonVariant = "blue" | "green" | "grey" | "red" | "yellow";
 const StyledButton = styled.button<StyledButtonProps>`
   background-color: ${(props) => props.theme.button[props.variant].background};
   border-color: ${(props) => props.theme.button[props.variant].border};
-  border-radius: 6px;
+  border-radius: 4px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   color: ${(props) => props.theme.button[props.variant].text};
   cursor: pointer;
   display: flex;
