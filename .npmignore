@@ -12,3 +12,6 @@ tests
 .eslintrc
 babel.config.js
 jest.config.js
+
+# Ignore Storybook-related items
+.storybook/
