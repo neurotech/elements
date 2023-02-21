@@ -18,7 +18,6 @@ const StyledColumn = styled.div<ColumnProps>`
   flex-shrink: ${(props) => props.flexShrink};
   min-width: 0;
   padding-left: ${(props) => props.space};
-  width: ${(props) => props.columnWidth};
 
   @media (max-width: 576px) {
     width: 100%;
