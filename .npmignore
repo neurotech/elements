@@ -15,3 +15,4 @@ jest.config.js
 
 # Ignore Storybook-related items
 .storybook/
+*.stories.tsx

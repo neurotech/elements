@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
+import styled from "styled-components";
 import { ColumnsContext } from "./Columns";
 import { Space } from "./shared/Space";
-import styled from "styled-components";
 
 type ColumnProps = {
   children?: React.ReactNode;
@@ -19,6 +19,17 @@ const StyledColumn = styled.div<ColumnProps>`
   min-width: 0;
   padding-left: ${(props) => props.space};
   width: ${(props) => props.columnWidth};
+
+  @media (max-width: 576px) {
+    width: 100%;
+    padding-bottom: ${(props) => props.space};
+  }
+  @media (min-width: 992px) {
+    width: ${(props) => props.columnWidth};
+  }
+  @media (min-width: 1200px) {
+    width: ${(props) => props.columnWidth};
+  }
 `;
 
 export const Column = (props: ColumnProps) => {

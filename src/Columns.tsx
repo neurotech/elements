@@ -1,9 +1,9 @@
 import React, { createContext } from "react";
+import styled from "styled-components";
 import { JustifyContent } from "./shared/JustifyContent";
 import { Space } from "./shared/Space";
-import styled from "styled-components";
 
-interface ColumnsProps {
+export interface ColumnsProps {
   alignItems?: string;
   children?: React.ReactNode;
   flexWrap?: string;
